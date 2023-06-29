@@ -1,0 +1,16 @@
+#ADD THE FOLLOWING to the /etc/mail.rc config 
+# [ IF YOU WANT TO USE GMAIL as mailer ] 
+# ELSE use whatever mailing config you want
+
+set smtp-use-starttls
+set smtp-auth=login
+set smtp=smtp://smtp.gmail.com:587
+set from="email-semder@gmail.com(Alerts dcastt.com)"
+set smtp-auth-user=emai-senderl@gmail.com
+set smtp-auth-password=lolololleetfakepassword
+set ssl-verify=ignore
+# this is important, the nss part, 
+# I had to rebuild my NSS database, but usually they come out of the box.
+set nss-config-dir=/etc/.certs
+
+
